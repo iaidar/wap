@@ -203,3 +203,24 @@ dt {
     right: 0px;
     opacity: 0.5;
 }
+
+#absolute-div {
+    position: absolute;
+    height: 200px;
+    width: 40%;
+    background-color: #E8DC9B;
+    border: 1px solid grey;
+    border-radius: 15%;
+    top: 5%;
+    left: 30%;
+}
+
+#absolute-div button {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    background-color: cadetblue;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5%;
+}

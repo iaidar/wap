@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title> credit card form </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <form action="" method="post">
+        <h1>Personal Information</h1>
+        <section>
+
+     <img src="image/card-en.png" alt="card">
+
+        
+        <div class="left"> 
+            
+            <p>First Name </p>
+            <input name="FirstName" pattern="[A-Za-z]{2,15}" title="you must enter just letters and the maximum lenth is 15 characters and the minimum is 2 letters"/>
+            <p>Date of Birth </p>
+            <input type="date" name="DB"/>
+
+            <p>Social Insurance Number(Optional)</p>
+            <input name="SIN" pattern="^([0-9]{3}-[0-9]{3})-[0-9]{3}$" title="please enter 9 digit ex:???-???-???"/>
+          
+
+        </div>
+
+        <div class="right"> 
+                <p>Last Name</p>
+                <input name="LastName" pattern="[A-Za-z]{2,15}" title="you must enter just letters and the maximum lenth is 15 characters and the minimum is 2 letters"/>    
+                <p> Mother’s Maiden Name</p>
+            <input name="MMN" pattern="[A-Za-z]{2,25}" />
+
+            <p> How did you learn about this card? (Optional)</p>
+            <select name="source">
+                <option value="" disabled="" selected>Select source</option>
+                <option value="mailOffer">Mail Offer</option>
+                <option value="searchEngine">Search Engine</option>
+                <option value="onlineBanner">Online Banner Ad or Video</option>
+                <option value="facebook">Facebook Ad or Video</option>
+                <option value="comparisonSite">Credit Cards Comparison Site</option>
+                <option value="email">Email with CapitalOne Content</option>
+                <option value="familyFriend">Family or Friend</option>
+                <option value="television">Television</option>
+                <option value="outdoorAd">Outdoor or Transit Ad</option>
+                <option value="newspaper">Newspaper</option>
+                <option value="magazine">Magazine</option>
+                <option value="sponsoredEvent">CapitalOne Sponsored Event</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+    
+
+        
+        
+    </section>
+        <hr>
+        <section>
+
+        <div>
+            <p>Contact Information</p>
+
+            <div class="left"> 
+                <p> Address (No P.O. Boxes)</p>
+                <input name="Address" pattern="^[a-zA-Z,0-9 ]{1,150}$" title="the maximum lenth is 150 characters and special characters are not accepted except ','"/>
+                <p>Email Address</p>
+                <input name="Email" pattern="^[a-zA-Z_\-]+@(([a-zA-Z_\-])+\.)+[a-zA-Z]{2,4}$" title="please provide correct email"/>
+            </div>
+
+            <div class="right"> 
+                    <p>Primary Phone Number</p>
+                <input name="Phone" pattern="^[0-9]{10}$" title="please enter correct phone number" />
+                <p>Suite/Apt. # (if Applicable)</p>
+                <input name="apt" pattern="^[a-zA-Z0-9 ]{1,15}$" title="maximum lenth is 15 characters no special characters are accepted"/>
+            </div>
+
+        </div>
+
+    </section>
+
+        <hr>
+
+        <section>
+
+        <div>
+            <p>Authorized User</p>
+
+            <input type="checkbox" name="Authorized" /> 
+            Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.
+
+        </div>
+
+    </section>
+
+        <hr>
+
+        <section>
+
+        <div>
+            <p>Employment Information</p>
+            <p> Employment Status</p>
+            <select name="employment-status">
+                <option value="" disabled="" selected>Select status</option>
+                <option value="employed">Employed</option>
+                <option value="selfEmployed">Self-Employed</option>
+                <option value="retired">Retired</option>
+                <option value="student">Student</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+
+        </div>
+
+    </section>
+
+        <hr>
+
+        <section>
+
+        <div>
+            <p>Financial Information</p>
+
+            <fieldset>
+                <legend>Do you: (Optional) </legend>
+                <input type="radio" name="cc" value="Own" /> Own
+                <input type="radio" name="cc" value="Rent" /> Rent
+                <input type="radio" name="cc" value="Live with parents" /> Live with parents
+                <input type="radio" name="cc" value="Other" /> Other
+            </fieldset>
+
+            <div class="left"> 
+                <p> Your Annual Income (Before Taxes)</p>
+                <input name="income" pattern="^[0-9]{1,6}$" title="please enter just number"/>
+
+                <legend>Do you have a mortgage? (Optional)</legend>
+                <input type="radio" name="cc" value="Yes" /> Yes
+                <input type="radio" name="cc" value="No" /> No
+
+                <p>Do you have any bank accounts?</p>
+                <select name="banking-info">
+                        <option value="" disabled="" selected>Select a type</option>
+                        <option value="chequing-and-savings">Chequing and Savings</option>
+                        <option value="chequing-only">Chequing Only</option>
+                        <option value="savings-only">Savings Only</option>
+                        <option value="neither">Neither</option>
+                    </select>
+
+                
+            </div>
+
+            <div class="right">
+                
+
+                    <p> Monthly Rent/Mortgage (Optional)</p>
+                <input name="MRent" pattern="^[0-9]{1,6}$" title="please enter just number"/>
+                <p>  Other Household Income (Before Taxes)</p>
+                <input name="Household" pattern="^[0-9]{1,6}$" title="please enter just number"/>
+
+                <legend>Would you like to use your card for cash advances? (Optional)</legend>
+                <input type="radio" name="cc" value="YesCA" /> Yes
+                <input type="radio" name="cc" value="NoCA" /> No
+
+            </div>
+
+        </section>
+
+            <hr>
+
+            <footer>
+
+            <p>By selecting “Review My Application”, you confirm that you have read, understood and agree to the above Important Disclosures.</p>
+
+            <input id="submit" type="submit" value="Review My Application">
+            </footer>
+
+        </div>
+
+    </form>
+
+    <div id="valid">
+    <a id="val1" href="https://validator.w3.org/check/referer">
+        <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="html validator" />
+    </a>
+    <a id="val2" href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="CSS validator" />
+    </a>
+</div>
+
+</body>
+
+</html>

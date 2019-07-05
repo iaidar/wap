@@ -1,0 +1,76 @@
+body{
+    background-color: #00ff73;
+    margin: 0%;    
+}
+
+img{
+    width: 254.3px;
+    height: 160px;
+    float: right;
+    margin-right: 15px;
+}
+
+form{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000dff;
+    background-color: rgb(177, 165, 165);
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+div ~ p{
+    color: #30336b;
+    text-align: center;
+    margin: 15px;
+    font-size: 35px;
+}
+
+div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input, select{
+    border: 2px solid rgb(97, 91, 91);
+    border-radius: 5px;
+    margin: 0%;
+}
+
+
+section{
+    overflow: auto;
+}
+
+.left{
+    float: left;
+    width: 35%;
+}
+
+.right{
+    float: right;
+    width: 35%;
+}
+
+p{
+    margin: 2%;
+}
+
+#submit{
+    background-color: rgb(212, 145, 0);
+    border: 0px;
+    width: 300px;
+    height: 39px;
+}
+
+footer{
+    text-align: center;
+}
+
+#valid {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.5;
+}

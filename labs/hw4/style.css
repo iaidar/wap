@@ -1,0 +1,16 @@
+body {
+    padding: 14px;
+    background-color: darkgoldenrod;
+}
+
+p,
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+code {
+    background-color: #242424;
+    padding: 4px;
+    color: #cacaca;
+}

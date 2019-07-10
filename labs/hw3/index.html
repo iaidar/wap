@@ -1,0 +1,161 @@
+<!-- Author: JOHN LAWAL, ID: 610098, ASSIGNMENT: HW3 - HTML FORM , FILE: HTML STRUCTURE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML FORM -JOHN LAWAL</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="../images/myfavicon.png" rel="icon">
+</head>
+
+<body>
+
+    <div>
+        <a href="https://www.capitalone.ca/" target="_blank"><img src="https://applynow.capitalone.ca/static/images/cof-logo.png" alt="Capital One"></a>
+    </div>
+    <form method="POST" action="https://jlawal.com/tools/WAP">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label>First Name</label>
+                <input minlength="2" name="firstname" title="Name must have at least two characters" required type="text" placeholder="Please enter your first name" />
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input minlength="2" name="lastname" title="Name must have at least two characters" required type="text" placeholder="Please enter your last name" />
+            </div>
+            <div>
+                <label>Date of Birth</label>
+                <input name="dob" title="Enter a valid date of Birth" required type="date" />
+            </div>
+            <div>
+                <label>Mother’s Maiden Name</label>
+                <input minlength="2" name="mum-maiden-name" title="Name must have at least two characters" required type="text" placeholder="Please enter your Mother's maiden name" />
+            </div>
+            <div>
+                <label>Social Security Number</label>
+                <input name="ssn" title="Please enter a valid Social Security Number." pattern="^\d{3}-\d{2}-\d{4}$" maxlength="11" required type="text" placeholder="AAA-GG-SSSS" />
+            </div>
+            <div>
+                <label>How did you learn about this card? (Optional)</label>
+                <select name="personalLearnAbout">
+                    <option value="">Select source</option>
+                    <option value="magazine">Magazine</option>
+                    <option value="television">Television</option>
+                    <option value="comparisonSite">Credit Cards Comparison Site</option>
+                    <option value="comparisonSite">Credit Cards Comparison Site</option>
+                    <option value="onlineBanner">Online Banner Ad or Video</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="searchEngine">Search Engine</option>
+                    <option value="familyFriend">Family or Friend</option>
+                    <option value="sponsoredEvent">CapitalOne Sponsored Event</option>
+                    <option value="outdoorAd">Outdoor or Transit Ad</option>
+                    <option value="other">Other</option>
+                    <option value="mailOffer">Mail Offer</option>
+                    <option value="facebook">Facebook Ad or Video</option>
+                    <option value="email">Email with CapitalOne Content</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+                <label>Home Address (No P.O Boxes)</label>
+                <input name="homeaddress" title="Please enter your Home Address." required type="text" placeholder="Home Address (No P.O. Boxes)" />
+            </div>
+            <div>
+                <label>Suite/Apt. # (if Applicable)</label>
+                <input name="suitenum" type="text" placeholder="Suite/Apt. # (if Applicable)" />
+            </div>
+            <div>
+                <label>Email Address</label>
+                <input name="email" type="email" pattern="([\w.-]+@([\w-]+)\.+\w{2,})" title="Please enter your Email Address." required placeholder="Email Address" />
+            </div>
+            <div>
+                <label>Primary Phone Number</label>
+                <input name="phone" type="tel" pattern="^\(\d{3}\)\d{3}-\d{4}$" title="Please enter your valid phone number." required placeholder="(abc)def-ghij" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Authorized User</legend>
+            <fieldset>
+                <label>
+                    <input name="authorize" type="checkbox" value="confirmation"/>
+                    <span>Yes</span>!I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.
+                </label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Employment Information</legend>
+            <label>Employment Status</label>
+            <select name="employment-status" required>
+                <option value="" disabled="">Select status</option>
+                <option value="employed">Employed</option>
+                <option value="selfEmployed">Self-Employed</option>
+                <option value="retired">Retired</option>
+                <option value="student">Student</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Financial Information</legend>
+            <fieldset>
+                <legend>Do you: (Optional)</legend>
+                <label><input name="fin-stat" value="own" type="radio"/> Own</label>
+                <label><input name="fin-stat" value="rent" type="radio"/> Rent</label>
+                <label><input name="fin-stat" value="live-with-parents" type="radio"/> Live with parents</label>
+                <label><input name="fin-stat" value="other" type="radio"/> Other</label>
+            </fieldset>
+            <div>
+                <label>Your Annual Income (Before Taxes)</label>
+                <input name="annual-income" title="Please enter your annual income." required type="number" placeholder="eg 100000" />
+            </div>
+            <div>
+                <label>Other Household Income (Before Taxes)</label>
+                <input name="household-income" title="Please enter your household income." required type="number" placeholder="eg 200000" />
+            </div>
+            <fieldset>
+                <legend>Do you have a mortgage? (Optional)</legend>
+                <label><input name="has-mortage" value="yes" type="radio"/> Yes</label>
+                <label><input name="has-mortage" value="no" type="radio"/> No</label>
+            </fieldset>
+            <div>
+                <label>Monthly Rent/Mortgage (Optional)</label>
+                <input title="Please enter your monthly rent/mortgage." name="rent" type="number" placeholder="Monthly Rent/Mortgage (Optional)" />
+            </div>
+            <div>
+                <label>Do you have any bank accounts?</label>
+                <select id="banking-info" name="banking-info" required>
+                    <option value="" disabled="">Select a type</option>
+                    <option value="chequing-and-savings">Chequing and Savings</option>
+                    <option value="chequing-only">Chequing Only</option>
+                    <option value="savings-only">Savings Only</option>
+                    <option value="neither">Neither</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Would you like to use your card for cash advances? (Optional)</legend>
+                <label><input name="like-card-for-advances" value="yes" type="radio"/> Yes</label>
+                <label><input name="like-card-for-advances" value="no" checked type="radio"/> No</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <p>By selecting “Review My Application”, you confirm that you have read, understood and agree to the above
+                <a href="https://applynow.capitalone.ca/?filter=all&productId=5856#entry-disclosures" target="_blank">Important Disclosures</a> .
+            </p>
+            <input type="submit" value="Review My Application" />
+        </fieldset>
+
+    </form>
+
+    <a href="https://validator.w3.org/check/referer">
+        <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="html validator" />
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!-- Author: JOHN LAWAL, ID: 610098, ASSIGNMENT: LAB 5 - MODULES, FILE: HTML STRUCTURE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LAB 5 - MODULES</title>
+    <link href="../hw3/style.css" rel="stylesheet" />
+    <link href="../images/myfavicon.png" rel="icon">
+    <script src="bank.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Create Account</legend>
+        <div>
+            <label>Account Name: </label>
+            <input type="text" id="acc_name" required />
+        </div>
+        <div>
+            <label>Deposit: </label>
+            <input type="number" min="100" id="deposit" required />
+        </div>
+        <button type="submit" id="btnSubmit" value="Create New Account">Create New Account</button>
+        <textarea rows="10" cols="100" id="created_account" readonly></textarea>
+    </fieldset>
+
+    <a href="https://validator.w3.org/check/referer">
+        <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="html validator" />
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+    </a>
+</body>
+
+</html>

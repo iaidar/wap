@@ -1,5 +1,5 @@
 body {
-    background-color: #FAF8F9;
+    background-color: rgb(212, 193, 203);
 }
 
 fieldset {
@@ -38,8 +38,8 @@ select {
 input[type="submit"],
 button {
     border-radius: 8px;
-    background-color: aqua;
-    color: darkgreen;
+    background-color: rgb(57, 46, 117);
+    color: rgb(245, 245, 245);
     font-weight: bold;
     cursor: pointer;
     padding: 8px;

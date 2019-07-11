@@ -1,16 +1,16 @@
 body {
     padding: 14px;
-    background-color: darkgoldenrod;
+    background-color: rgb(11, 184, 69);
 }
 
 p,
 h1 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
 code {
-    background-color: #242424;
+    background-color: #252020;
     padding: 4px;
-    color: #cacaca;
+    color: #ffffff;
 }

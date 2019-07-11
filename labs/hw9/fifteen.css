@@ -3,11 +3,11 @@ button {
     font-family: cursive;
     font-size: 14pt;
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(98, 76, 197);
 }
 
 body.won {
-    background-color: greenyellow;
+    background-color: rgb(89, 104, 66);
 }
 
 
@@ -31,7 +31,7 @@ body.won {
     width: 90px;
     height: 90px;
     position: absolute;
-    text-shadow: -2px 2px 3px yellow;
+    text-shadow: -2px 2px 3px rgb(114, 32, 180);
 }
 
 

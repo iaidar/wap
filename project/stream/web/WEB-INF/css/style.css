@@ -1,0 +1,12 @@
+body {
+    background-color: azure;
+}
+
+.card {
+    margin: 10px;
+    transition: all .3s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 1px black;
+}
